@@ -2,21 +2,21 @@
 // arrays con informacion
 const europa = [
    {
-      foto:"./fotos/Madrid-2.jpg",
+      foto:"./fotos/madrid-2.jpg",
       pais: "España",
       ciudad: "Madrid",
       precio: 1000000,
       info: "Puerta del Sol , Pedir un delicioso chocolate caliente con porras en la histórica Chocolatería San Ginés o una napolitana casera en La Mallorquina, para después acercarte a la Puerta del Sol, es una de las mejores cosas que hacer en Madrid."
    },
    {
-      foto:"./fotos/Milan-1.jpg",
+      foto:"./fotos/milan-1.jpg",
       pais: "Italia",
       ciudad: "Milan",
       precio: 2400000,
       info: "LA ÚLTIMA CENA DE LEONARDO DAVINCI Cuando te encuentres en el centro histórico de Milán no puedes dejar de conocer una de las joyas de esta ciudad, una de las piezas artísticas más enigmáticas que se conocen hasta el momento, “La Última Cena” de Leonardo Da Vinci. La misma se ha vuelto extremadamente popular gracias a los libros de Dan Brown."
    },
    {
-      foto:"./fotos/Paris-1.jpg",
+      foto:"./fotos/paris-1.jpg",
       pais: "Francia",
       ciudad: "Paris",
       precio: 4000000,
@@ -25,21 +25,21 @@ const europa = [
 ]
 const america = [
    {
-      foto:"./fotos/Mendoza-1.jpg",
+      foto:"./fotos/mendoza-1.jpg",
       pais: "Argentina",
       ciudad: "Mendoza",
       precio: 4000000,
       info: "Puente del Inca El Puente del Inca se encuentra al noroeste de la provincia de Mendoza y es una formación rocosa que forma un puente natural sobre el río Las Cuevas.Se ubica a unos 183 kilómetros de la Ciudad de Mendoza por la Ruta No. 7, cerca del paso a Chile, y de la entrada principal del Parque Provincial Aconcagua. Posee una forma curiosa y una gran variedad de colores entre los tonos del naranja, amarillo y ocre."
    },
    {
-      foto:"./fotos/Medellin-1.jpg",
+      foto:"./fotos/medellin-1.jpg",
       pais: "Colombia",
       ciudad: "Medellin",
       precio: 3500000,
       info: "omuna 13 La Comuna 13, un barrio de pasado trágico y violento donde murieron cientos de personas por la acción de las guerrillas, los grupos paramilitares, la guerra sucia del gobierno y las bandas de narcotráfico como el Cartel de Medellín de Pablo Escobar, ha sabido superar todas estas adversidades gracias al trabajo de su gente y transformarlo en el lugar más imprescindible que visitar en Medellín."
    },
    {
-      foto:"./fotos/Rio-1.jpg",
+      foto:"./fotos/rio-1.jpg",
       pais: "Brasil",
       ciudad: "Rio",
       precio: 5000000,
@@ -48,14 +48,14 @@ const america = [
 ]
 const caribe = [
    {
-      foto:"./fotos/Sdom-1.jpg",
+      foto:"./fotos/sdom-1.jpg",
       pais: "Republica Dominicana",
       ciudad: "Santo Domingo",
       precio: 1200000,
       info: " La Catedral Primada de América . La primera catedral del continente americano es uno de los lugares turísticos de Santo Domingo más visitados. Bajo el nombre oficial de Santa Iglesia Catedral Basílica Metropolitana de Nuestra Señora Santa María de la Encarnación o Anunciación (sí, así se llama), esta edificación de estilo gótico fue construida entre 1510 y 1540. Al recorrer su interior y apreciar la gran cantidad de piezas antiguas, pinturas de la época colonial y el ambiente, nos sentiremos transportados al pasado. Además, la catedral se comunica con la Plaza España y la visita puede ser doblemente aprovechada para crear memorias que nunca te abandonarán. El lugar más icónico de la Zona Colonial te espera."
    },
    {
-      foto:"./fotos/Haba-1.jpg",
+      foto:"./fotos/haba-1.jpg",
       pais: "Cuba",
       ciudad: "La habana",
       precio: 700000,
@@ -63,7 +63,7 @@ const caribe = [
 
    },
    {
-      foto:"./fotos/Ism-1.jpg",
+      foto:"./fotos/ism-1.jpg",
       pais: "Mexico",
       ciudad: "Islas Mujeres",
       precio: 6300000,
