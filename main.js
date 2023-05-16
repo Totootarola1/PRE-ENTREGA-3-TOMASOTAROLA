@@ -115,6 +115,7 @@ function mostrarEuropa() {
 
 }
 function mostrarAmerica() {
+   titulo.innerHTML = "Escoge tu destino aqui!"
    contenedorInfo.innerHTML = "";
    america.forEach(mostrar => {
       show = document.createElement(`div`);
@@ -133,6 +134,7 @@ function mostrarAmerica() {
    $('#contenedor-info').toggle(swing)
 }
 function mostrarCaribe() {
+   titulo.innerHTML = "Escoge tu destino aqui!"
    contenedorInfo.innerHTML = "";
    caribe.forEach(mostrar => {
       show = document.createElement(`div`);
