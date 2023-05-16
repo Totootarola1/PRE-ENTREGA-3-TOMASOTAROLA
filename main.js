@@ -106,11 +106,10 @@ function mostrarEuropa() {
                 <p>  Turismo :  ${mostrar.info} </p>
                 <button id="comprar" ${$("#comprar").click(buy)}>Comprar</button>`
       contenedorInfo.appendChild(show);
-      $("#texto").toggle()
       europa.forEach(save => { guardarLocal(save.europa, JSON.stringify(europa)) })
       
    })
-   $('#contenedor-info').toggle()
+   $('#contenedor-info').toggle(swing)
 
 }
 function mostrarAmerica() {
@@ -125,12 +124,11 @@ function mostrarAmerica() {
                 <p>  Turismo :  ${mostrar.info} </p>
                 <button id="comprar">Comprar</button>`
       contenedorInfo.appendChild(show);
-      comprar = $("#comprar").click(buy)
-      $("#texto").toggle()
+      comprar = $("#comprar").click(buy);
       america.forEach(save => { guardarLocal(save.america, JSON.stringify(america)) })
 
    })
-   $('#contenedor-info').toggle()
+   $('#contenedor-info').toggle(swing)
 }
 function mostrarCaribe() {
    contenedorInfo.innerHTML = "";
@@ -144,12 +142,11 @@ function mostrarCaribe() {
                 <p>  Turismo :  ${mostrar.info} </p>
                 <button id="comprar">Comprar</button>`
       contenedorInfo.appendChild(show);
-      comprar = $("#comprar").click(buy)
-      $("#texto").toggle()
+      comprar = $("#comprar").click(buy);
       caribe.forEach(save => { guardarLocal(save.caribe, JSON.stringify(caribe)) })
 
    })
-   $('#contenedor-info').toggle()
+   $('#contenedor-info').toggle(swing)
 }
 
 
