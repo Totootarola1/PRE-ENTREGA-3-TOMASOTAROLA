@@ -83,6 +83,7 @@ function buy() {
 //se guarda en el servidor cada accion
 const guardarLocal = (clave, valor) => { localStorage.setItem(clave, valor) };
 // se llama todos los botones
+let titulo = document.querySelector("#titulo")
 let contenedorInfo = document.querySelector("#contenedor-info")
 let botonEuropa = document.querySelector("#europa")
 let botonAmerica = document.querySelector("#america")
@@ -95,6 +96,7 @@ $("#caribe").click(mostrarCaribe)
 
 // funciones correspondientes a cada boton
 function mostrarEuropa() {
+   titulo.innerHTML = "Escoge tu destino aqui!"
    comprar = document.querySelector("#comprar")
    contenedorInfo.innerHTML = "";
    europa.forEach(mostrar => {
