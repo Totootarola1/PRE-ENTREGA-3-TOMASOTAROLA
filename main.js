@@ -109,7 +109,7 @@ function mostrarEuropa() {
       europa.forEach(save => { guardarLocal(save.europa, JSON.stringify(europa)) })
       
    })
-   $('#contenedor-info').toggle(swing)
+   $('#contenedor-info').toggle(swing(400))
 
 }
 function mostrarAmerica() {
