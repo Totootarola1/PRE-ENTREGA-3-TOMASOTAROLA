@@ -2,7 +2,7 @@
 // arrays con informacion
 const europa = [
    {
-      foto:"./madrid-2.jpg",
+      foto:"/madrid-2.jpg",
       pais: "España",
       ciudad: "Madrid",
       precio: 1000000,
