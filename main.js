@@ -88,11 +88,12 @@ let contenedorInfo = document.querySelector("#contenedor-info")
 let botonEuropa = document.querySelector("#europa")
 let botonAmerica = document.querySelector("#america")
 let botonCaribe = document.querySelector("#caribe")
-let botonBorrar = document.querySelector("#ocultar")
+ let reset = document.querySelector("#reset")
 //mediante jquery se hace la sintaxis de llamado de envento
 $("#europa").click(mostrarEuropa);
 $("#america").click(mostrarAmerica)
 $("#caribe").click(mostrarCaribe)
+$("#reset").click(borrar)
 
 // funciones correspondientes a cada boton
 function mostrarEuropa() {
@@ -150,6 +151,10 @@ function mostrarCaribe() {
       caribe.forEach(save => { guardarLocal(save.caribe, JSON.stringify(caribe)) })
 
    })
+    function borrar () {
+    contenedorInfo.innerHTML = "";
+ }
+ 
    $('#contenedor-info').toggle(swing)
 }
 
