@@ -83,6 +83,9 @@ function buy() {
 //se guarda en el servidor cada accion
 const guardarLocal = (clave, valor) => { localStorage.setItem(clave, valor) };
 // se llama todos los botones
+let nombre = document.querySelector("#nombre")
+let apellido = document.querySelector("#apellido")
+let jsonbtn = document.querySelector("#json")
 let titulo = document.querySelector("#titulo")
 let contenedorInfo = document.querySelector("#contenedor-info")
 let botonEuropa = document.querySelector("#europa")
@@ -90,6 +93,7 @@ let botonAmerica = document.querySelector("#america")
 let botonCaribe = document.querySelector("#caribe")
 let reset = document.querySelector("#reset")
 //mediante jquery se hace la sintaxis de llamado de envento
+$("#json").click(registrar);
 $("#europa").click(mostrarEuropa);
 $("#america").click(mostrarAmerica)
 $("#caribe").click(mostrarCaribe)
@@ -109,7 +113,7 @@ function mostrarEuropa() {
                 <p>  Turismo :  ${mostrar.info} </p>
                 <button id="comprar" ${$("#comprar").click(buy)}>Comprar</button>`
       contenedorInfo.appendChild(show);
-      europa.forEach(save => { guardarLocal(save.europa, JSON.stringify(europa)) })
+     guardarLocal(JSON.stringify(europa))
       
    })
    $('#contenedor-info').toggle(swing(400))
@@ -129,7 +133,7 @@ function mostrarAmerica() {
                 <button id="comprar">Comprar</button>`
       contenedorInfo.appendChild(show);
       comprar = $("#comprar").click(buy);
-      america.forEach(save => { guardarLocal(save.america, JSON.stringify(america)) })
+      guardarLocal(JSON.stringify(america))
 
    })
    $('#contenedor-info').toggle(swing)
@@ -148,14 +152,21 @@ function mostrarCaribe() {
                 <button id="comprar">Comprar</button>`
       contenedorInfo.appendChild(show);
       comprar = $("#comprar").click(buy);
-      caribe.forEach(save => { guardarLocal(save.caribe, JSON.stringify(caribe)) })
+      guardarLocal(JSON.stringify(caribe))
 })
    $('#contenedor-info').toggle(swing)
 }
     function borrar () {
     contenedorInfo.innerHTML = "";
     titulo.innerHTML = "";
+    localStorage.clear();
  }
-
+function registrar() {
+      var data = {
+          "nombre":nombre.value,
+          "apellido":apellido.value
+      }
+      guardarLocal(JSON.stringify(data))
+  }
 
 
