@@ -88,7 +88,7 @@ let contenedorInfo = document.querySelector("#contenedor-info")
 let botonEuropa = document.querySelector("#europa")
 let botonAmerica = document.querySelector("#america")
 let botonCaribe = document.querySelector("#caribe")
- let reset = document.querySelector("#reset")
+let reset = document.querySelector("#reset")
 //mediante jquery se hace la sintaxis de llamado de envento
 $("#europa").click(mostrarEuropa);
 $("#america").click(mostrarAmerica)
