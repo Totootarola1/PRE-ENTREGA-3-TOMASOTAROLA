@@ -149,14 +149,12 @@ function mostrarCaribe() {
       contenedorInfo.appendChild(show);
       comprar = $("#comprar").click(buy);
       caribe.forEach(save => { guardarLocal(save.caribe, JSON.stringify(caribe)) })
-
-   })
+})
+   $('#contenedor-info').toggle(swing)
+}
     function borrar () {
     contenedorInfo.innerHTML = "";
  }
- 
-   $('#contenedor-info').toggle(swing)
-}
 
 
 
