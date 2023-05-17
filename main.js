@@ -154,6 +154,7 @@ function mostrarCaribe() {
 }
     function borrar () {
     contenedorInfo.innerHTML = "";
+    titulo.innerHTML = "";
  }
 
 
