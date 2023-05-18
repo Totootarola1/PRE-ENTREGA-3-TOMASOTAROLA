@@ -82,16 +82,11 @@ function buy() {
 }
 //se guarda en el servidor cada accion
 const guardarLocal = (clave, valor) => { localStorage.setItem(clave, valor) };
-// se llama todos los botones
+// se crean variables con los input y titulo para luego guardar datos y modificar alguno otros
 let nombre = document.querySelector("#nombre")
 let apellido = document.querySelector("#apellido")
-let jsonbtn = document.querySelector("#json")
 let titulo = document.querySelector("#titulo")
 let contenedorInfo = document.querySelector("#contenedor-info")
-let botonEuropa = document.querySelector("#europa")
-let botonAmerica = document.querySelector("#america")
-let botonCaribe = document.querySelector("#caribe")
-let reset = document.querySelector("#reset")
 //mediante jquery se hace la sintaxis de llamado de envento
 $("#json").click(registrar);
 $("#europa").click(mostrarEuropa);
